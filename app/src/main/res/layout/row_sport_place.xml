@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:background="@drawable/rounded_background"> <!-- Apply the rounded background here -->
+
+    <TextView
+        android:id="@+id/emojiImageView"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewSportPlaceName"
+        android:layout_width="184dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato_regular"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="İBB Pendik Spor Tesisi"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+
+        android:textColor="@color/pastel_orange_txt_highlight"
+        android:text="3.3"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewScore"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="2km"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>

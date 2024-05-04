@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4A268"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:fontFamily="@font/lato_light"
+        android:text="Find Sport Facilities"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- İl Seçimi için Açılır Menü -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spinner_city_container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/filter_spinner_dropdown_bg"
+            android:hint="@string/select_city"
+            app:boxBackgroundColor="@color/pastel_orange_light"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconDrawable="@drawable/arrow_down"
+            app:endIconTint="@color/pastel_orange_txt_highlight">
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner_city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                android:text="Enter the city" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- İlçe Seçimi için Açılır Menü -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spinner_district_container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/filter_spinner_dropdown_bg"
+            android:hint="@string/select_district"
+            app:boxBackgroundColor="@color/pastel_orange_light"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconDrawable="@drawable/arrow_down"
+            app:endIconTint="@color/pastel_orange_txt_highlight">
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="Enter the district" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Spor Türü Seçimi için Açılır Menü -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spinner_sport_type_container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/filter_spinner_dropdown_bg"
+            android:hint="@string/select_sport_type"
+            app:boxBackgroundColor="@color/pastel_orange_light"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconDrawable="@drawable/arrow_down"
+            app:endIconTint="@color/pastel_orange_txt_highlight">
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner_sport_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="Enter the sport" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- API İsteği için Buton -->
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#CE2C2828"
+            android:text="@string/search" />
+    </LinearLayout>
+</LinearLayout>

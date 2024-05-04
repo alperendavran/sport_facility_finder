@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/pastel_orange_light"
+    >
+
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="46dp"
+        android:layout_height="32dp"
+        android:background="@drawable/android_arrow_back"
+
+        />
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nearby Sports Facilities"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#684019"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <!-- Sort by Rating Button -->
+    <Button
+        android:id="@+id/button_sort_rating"
+        android:layout_width="46dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="300dp"
+        android:background="@drawable/star_1"
+
+        />
+
+
+    <!-- Sort by Distance Button -->
+
+    <!-- RecyclerView -->
+
+    <Button
+        android:id="@+id/button_sort_distance"
+        android:layout_width="59dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="-32dp"
+        android:layout_marginLeft="220dp"
+
+        android:background="@drawable/direction" />
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="location"
+        android:layout_marginLeft="210dp"
+        android:layout_marginRight="90dp"
+
+        android:textColor="#684019"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-17dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-20dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="  rating"
+        android:textColor="#684019"
+        android:textSize="14sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSportPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="100dp"
+
+
+        />
+
+</LinearLayout>

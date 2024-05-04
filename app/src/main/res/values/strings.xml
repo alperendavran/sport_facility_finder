@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">cs310_project</string>
+
+        <string name="select_city">City</string>
+        <string name="select_district">District</string>
+        <string name="select_sport_type">Sport</string>
+        <string name="sport_icon">Sport Icon Description</string>
+         <string name="search">Ara</string>
+
+</resources>
